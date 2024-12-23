@@ -24,7 +24,7 @@ export function Hero() {
             alt="Student"
             width={250}
             height={250}
-            className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 rounded-full object-cover"
+            className="absolute left-1/2 top-[8vw] -translate-x-1/2 -translate-y-1/2 rounded-full object-cover"
           />
         </div>
         <div className="absolute right-32 top-0 h-48 w-48 rounded-full bg-red-500">
@@ -33,7 +33,7 @@ export function Hero() {
             alt="student"
             width={180}
             height={180}
-            className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 rounded-full object-cover"
+            className="absolute left-1/2 top-1/3 -translate-x-1/2 -translate-y-1/2 rounded-full object-cover"
           />
         </div>
         <div className="absolute bottom-0 right-48 h-56 w-56 rounded-full bg-yellow-500">
