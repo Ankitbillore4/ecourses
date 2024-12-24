@@ -3,38 +3,30 @@ import { Facebook, Github, Mail, MapPin, Phone, Twitter, ComputerIcon as Windows
 
 export function Footer() {
   return (
-    <footer className="border-t bg-slate-950 text-slate-50">
-      <div className="container grid gap-8 py-12 md:grid-cols-2 lg:grid-cols-4">
-        <div>
+    <footer className="border-t bg-slate-800 text-slate-50 flex items-center justify-center"> 
+      <div className="container flex justify-center gap-[6vw] py-28 md:grid-cols-2 lg:grid-cols-4 ">
+        <div className=" w-auto">
           <Link href="/" className="flex items-center gap-2 font-semibold">
             <div className="text-orange-500">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="24"
-                height="24"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                strokeWidth="2"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-              >
-                <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5" />
-              </svg>
+            <img
+                src="/images/skillsmedialogo.png" // Replace with the actual image URL
+                alt="Instructor"
+                className="w-52 h-12"
+              />
+           
             </div>
-            SKILLSMEDIA
           </Link>
-          <p className="mt-4 text-slate-400">
-            Empowering learners through accessible and engaging online education.
+          <p className="mt-4 text-[text-[#F5EFE7]] text-lg">
+            Empowering learners through accessible and engaging online <br /> education.
           </p>
-          <p className="mt-4 text-slate-400">
-            Byway is a leading online learning platform dedicated to providing high-quality, flexible, and affordable
-            educational experiences.
+          <p className="mt-4 text-[text-[#F5EFE7]] text-lg">
+            Byway is a leading online learning platform dedicated to <br /> providing high-quality, flexible, and affordable
+            educational <br /> experiences.
           </p>
         </div>
-        <div>
-          <h3 className="mb-4 text-lg font-semibold">Get Help</h3>
-          <ul className="space-y-2 text-slate-400">
+        <div className=" w-auto text-lg">
+          <h3 className="mb-4 text-xl font-semibold ">Get Help</h3>
+          <ul className="space-y-2 text-[#F5EFE7]">
             <li>
               <Link href="/contact">Contact Us</Link>
             </li>
@@ -46,9 +38,9 @@ export function Footer() {
             </li>
           </ul>
         </div>
-        <div>
-          <h3 className="mb-4 text-lg font-semibold">Programs</h3>
-          <ul className="space-y-2 text-slate-400">
+        <div className=" w-auto text-lg">
+          <h3 className="mb-4 text-xl font-semibold">Programs</h3>
+          <ul className="space-y-2 text-[text-[#F5EFE7]]">
             <li>
               <Link href="/programs/art-design">Art & Design</Link>
             </li>
@@ -66,9 +58,9 @@ export function Footer() {
             </li>
           </ul>
         </div>
-        <div>
-          <h3 className="mb-4 text-lg font-semibold">Contact Us</h3>
-          <ul className="space-y-4 text-slate-400">
+        <div className=" w-auto text-lg">
+          <h3 className="mb-4 text-xl font-semibold">Contact Us</h3>
+          <ul className="space-y-4 text-[text-[#F5EFE7]]">
             <li className="flex items-center gap-2">
               <MapPin className="h-5 w-5" />
               Address: 123 Main Street, Anytown, CA 12345
@@ -82,18 +74,41 @@ export function Footer() {
               Mail: client@skillsmedia.in
             </li>
           </ul>
-          <div className="mt-6 flex gap-4">
-            <Link href="#" className="rounded-full bg-slate-800 p-2 hover:bg-slate-700">
-              <Facebook className="h-5 w-5" />
+          <div className="mt-6 flex gap-8 ">
+            <Link href="#" className="rounded-full bg-white p-2 hover:bg-slate-700">
+            <img
+                src="/images/facebook.png" // Replace with the actual image URL
+                alt="Instructor"
+                className="w-12 h-12"
+              />
             </Link>
-            <Link href="#" className="rounded-full bg-slate-800 p-2 hover:bg-slate-700">
-              <Github className="h-5 w-5" />
+            <Link href="#" className="rounded-full bg-white p-2 hover:bg-slate-700">
+            <img
+                src="/images/github.png" // Replace with the actual image URL
+                alt="Instructor"
+                className="w-12 h-12"
+              />
             </Link>
-            <Link href="#" className="rounded-full bg-slate-800 p-2 hover:bg-slate-700">
-              <Twitter className="h-5 w-5" />
+            <Link href="#" className="rounded-full bg-white p-2 hover:bg-slate-700">
+            <img
+                src="/images/google.png" // Replace with the actual image URL
+                alt="Instructor"
+                className="w-12 h-12"
+              />
             </Link>
-            <Link href="#" className="rounded-full bg-slate-800 p-2 hover:bg-slate-700">
-              <Windows className="h-5 w-5" />
+            <Link href="#" className="rounded-full bg-white p-2 hover:bg-slate-700">
+            <img
+                src="/images/twitter.png" // Replace with the actual image URL
+                alt="Instructor"
+                className="w-12 h-12"
+              />
+            </Link>
+            <Link href="#" className="rounded-full bg-white p-2 hover:bg-slate-700">
+            <img
+                src="/images/microsoft.png" // Replace with the actual image URL
+                alt="Instructor"
+                className="w-12 h-12"
+              />
             </Link>
           </div>
         </div>

@@ -9,39 +9,67 @@ export function Instructors() {
       role: "UI/UX Designer",
       rating: 4.9,
       students: "2400 Students",
-      image: "/images/rectangle 1136.png",
+      image: "/images/Rectangle 1136.png",
     },
+    {
+      name: "Ronald Richards",
+      role: "UI/UX Designer",
+      rating: 4.9,
+      students: "2400 Students",
+      image: "/images/Rectangle 1136.png",
+    },
+    {
+      name: "Ronald Richards",
+      role: "UI/UX Designer",
+      rating: 4.9,
+      students: "2400 Students",
+      image: "/images/Rectangle 1136.png",
+    },
+    {
+      name: "Ronald Richards",
+      role: "UI/UX Designer",
+      rating: 4.9,
+      students: "2400 Students",
+      image: "/images/Rectangle 1136.png",
+    },
+    
     // Add more instructors
   ]
 
   return (
     <section className="container py-12">
       <div className="flex items-center justify-between">
-        <h2 className="text-2xl font-bold text-primary-200">Top Instructors</h2>
+        <h2 className="text-2xl font-bold text-gray-900">Top Instructors</h2>
         <Link href="/instructors" className="text-sm text-blue-600 hover:underline">
           See All
         </Link>
       </div>
-      <div className="mt-8 grid gap-6 sm:grid-cols-3 lg:grid-cols-5">
+      <div className="mt-8 grid gap-6 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 ">
         {instructors.map((instructor, index) => (
-          <Link key={index} href={`/instructor/${instructor.name.toLowerCase().replace(/ /g, "-")}`}>
-            <div className="group rounded-lg border p-4 transition-colors hover:border-primary">
-              <div className="aspect-square overflow-hidden rounded-lg">
+          <Link 
+            key={index} 
+            href={`/instructor/${instructor.name.toLowerCase().replace(/ /g, "-")}`}
+            className="block"
+          >
+            <div className="rounded-3xl bg-white p-4 shadow-xl transition-shadow hover:shadow-lg">
+              <div className="aspect-[4/3] overflow-hidden rounded-2xl">
                 <Image
                   src={instructor.image}
                   alt={instructor.name}
-                  width={200}
-                  height={200}
-                  className="object-cover transition-transform group-hover:scale-105"
+                  width={400}
+                  height={300}
+                  className="h-full w-full object-cover"
                 />
               </div>
-              <div className="mt-4 text-center text-primary-100">
-                <h3 className="font-semibold text-primary-200">{instructor.name}</h3>
-                <p className="mt-1 text-sm text-muted-foreground">{instructor.role}</p>
-                <div className="mt-2 flex items-center justify-center gap-2">
-                  <Star className="h-4 w-4 fill-yellow-400 text-yellow-400" />
-                  <span className="text-sm">{instructor.rating}</span>
-                  <span className="text-sm text-muted-foreground">{instructor.students}</span>
+              <div className="mt-4 space-y-2  text-center">
+                <h3 className="text-xl font-semibold text-gray-900 ">{instructor.name}</h3>
+                <p className="text-lg text-gray-500">{instructor.role}</p>
+                <div className="flex items-center justify-between px-6 gap-4 border-t-2 pt-2">
+                  <div className="flex items-center gap-2 ">
+                    <Star className="h-5 w-5 fill-yellow-400 text-yellow-400" />
+                    <span className="font-medium text-gray-700">{instructor.rating}</span>
+                  </div>
+                  <span className="text-md text-gray-700">{instructor.students}</span>
                 </div>
               </div>
             </div>
