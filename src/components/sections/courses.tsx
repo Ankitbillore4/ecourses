@@ -1,7 +1,6 @@
 import { Star } from 'lucide-react'
 import Image from "next/image"
 import Link from "next/link"
-
 export function Courses() {
   const courses = [
     {
@@ -47,7 +46,7 @@ export function Courses() {
     <section className="container py-12">
       <div className="flex items-center justify-between">
         <h2 className="text-2xl font-bold text-gray-900">Top Courses</h2>
-        <Link href="/courses" className="text-sm text-blue-600 hover:underline">
+        <Link href="/course" className="text-sm text-blue-600 hover:underline">
           See All
         </Link>
       </div>

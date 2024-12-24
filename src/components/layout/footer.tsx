@@ -20,7 +20,7 @@ export function Footer() {
             Empowering learners through accessible and engaging online <br /> education.
           </p>
           <p className="mt-4 text-[text-[#F5EFE7]] text-lg">
-            Byway is a leading online learning platform dedicated to <br /> providing the high-quality, flexible, and affordable
+            Byway is a leading online learning platform dedicated to <br /> providing high-quality, flexible, and affordable
             educational <br /> experiences.
           </p>
         </div>
