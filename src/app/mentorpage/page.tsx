@@ -1,11 +1,14 @@
 'use client'
 
+import { Footer } from '@/components/layout/footer'
+import { Headeraut } from '@/components/layout/headeraut'
 import Image from 'next/image'
 import Link from 'next/link'
 
 export default function InstructorProfile() {
   return (
     <>
+    <Headeraut/>
     <div className="max-w-6xl mx-auto px-4 py-8 text-primary-100">
       <div className="grid grid-cols-1 lg:grid-cols-[1fr,auto] gap-8">
         {/* Left Column */}
@@ -106,6 +109,7 @@ export default function InstructorProfile() {
         </div>
       </div>
     </div>
+    <Footer/>
     </>
   )
 }

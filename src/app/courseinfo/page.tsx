@@ -3,6 +3,8 @@
 import { useState } from 'react'
 import Image from 'next/image'
 import { PlayCircle, ChevronDown, ChevronUp, Clock } from 'lucide-react'
+import { Footer } from '@/components/layout/footer'
+import { Headeraut } from '@/components/layout/headeraut'
 
 export default function CourseDetails() {
   const [activeTab, setActiveTab] = useState('details')
@@ -17,7 +19,9 @@ export default function CourseDetails() {
   }
 
   return (
-    <div className="container mx-auto px-4 py-6">
+    <>
+    <Headeraut/>
+    <div className="container mx-auto px-4 py-6 text-primary-200">
       <h1 className="text-2xl font-bold mb-6">Introduction to User Experience Design</h1>
       
       <div className="flex flex-col lg:flex-row gap-8">
@@ -26,7 +30,7 @@ export default function CourseDetails() {
           {/* Video Preview */}
           <div className="relative aspect-video mb-8 rounded-lg overflow-hidden bg-gray-100 w-full">
             <Image
-              src="/placeholder.svg"
+              src="/images/videosample.png"
               alt="Course preview"
               fill
               className="object-cover"
@@ -83,7 +87,7 @@ export default function CourseDetails() {
                 <h2 className="text-xl font-semibold mb-4">Instructor</h2>
                 <div className="flex items-start gap-4">
                   <Image
-                    src="/placeholder.svg"
+                    src="/images/authorphoto.png"
                     alt="Ronald Richards"
                     width={64}
                     height={64}
@@ -240,6 +244,8 @@ export default function CourseDetails() {
         </div>
       </div>
     </div>
+    <Footer/>
+    </>
   )
 }
 

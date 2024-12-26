@@ -4,6 +4,9 @@ import { useState } from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
 import { Share2 } from 'lucide-react'
+import { Footer } from '@/components/layout/footer'
+import { Header } from '@/components/layout/header'
+import { Headeraut } from '@/components/layout/headeraut'
 
 export default function ProfileEditPage() {
   const [selectedImage, setSelectedImage] = useState<string | null>(null)
@@ -20,6 +23,8 @@ export default function ProfileEditPage() {
   }
 
   return (
+    <>
+    <Headeraut/>
     <div className="min-h-screen bg-gray-50 text-primary-100">
       <div className="container mx-auto px-4 py-8">
         <div className="flex flex-col md:flex-row gap-8">
@@ -231,5 +236,7 @@ export default function ProfileEditPage() {
         </div>
       </div>
     </div>
+    <Footer/>
+    </>
   )
 }
