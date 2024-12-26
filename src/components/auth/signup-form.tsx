@@ -127,51 +127,25 @@ export function SignUpForm() {
           disabled={isLoading}
           className="flex items-center justify-center p-3 w-full border border-gray-300 rounded-lg text-gray-700 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-blue-500 disabled:bg-gray-300"
         >
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="16"
-            height="16"
-            fill="currentColor"
-            className="mr-2"
-            viewBox="0 0 16 16"
-          >
-            <path d="M10.25 4.25a2.25 2.25 0 0 0-2.25 2.25v2h-2v-2H5v2H3v3h2v6h2v-6h2v-3h-2v-2a.75.75 0 0 1 .75-.75h3.5a.75.75 0 0 1 .75.75v2h-2v3h2v-3h-2v-2a2.25 2.25 0 0 0-2.25-2.25h-1.5z"/>
-          </svg>
-          Facebook
+         
+         <img className="h-9" src="/images/facebook.png" alt="" />
+          <h1 className="pl-2 text-blue-500">Facebook</h1>
         </button>
         <button
           type="button"
           disabled={isLoading}
           className="flex items-center justify-center p-3 w-full border border-gray-300 rounded-lg text-gray-700 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-blue-500 disabled:bg-gray-300"
         >
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="16"
-            height="16"
-            fill="currentColor"
-            className="mr-2"
-            viewBox="0 0 16 16"
-          >
-            <path d="M9 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H9zm4 14H9V2h4v12z"/>
-          </svg>
-          Google
+           <img className="h-9" src="/images/google.png" alt="" />
+           <h1 className="pl-2 text-red-600">Google</h1>
         </button>
         <button
           type="button"
           disabled={isLoading}
           className="flex items-center justify-center p-3 w-full border border-gray-300 rounded-lg text-gray-700 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-blue-500 disabled:bg-gray-300"
         >
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="16"
-            height="16"
-            fill="currentColor"
-            className="mr-2"
-            viewBox="0 0 16 16"
-          >
-            <path d="M7.5 0A7.5 7.5 0 0 0 0 7.5 7.5 7.5 0 0 0 7.5 15a7.5 7.5 0 0 0 7.5-7.5A7.5 7.5 0 0 0 7.5 0zm0 13A5.5 5.5 0 1 1 13 7.5 5.5 5.5 0 0 1 7.5 13z"/>
-          </svg>
-          Microsoft
+           <img className="h-9" src="/images/microsoft.png" alt="" />
+           <h1 className="pl-2">Microsoft</h1>
         </button>
       </div>
       <p className="px-8 text-center text-sm text-muted-foreground">

@@ -79,35 +79,35 @@ export function Footer() {
             <img
                 src="/images/facebook.png" // Replace with the actual image URL
                 alt="Instructor"
-                className="w-12 h-12"
+                className="w-6 h-6"
               />
             </Link>
             <Link href="#" className="rounded-full bg-white p-2 hover:bg-slate-700">
             <img
                 src="/images/github.png" // Replace with the actual image URL
                 alt="Instructor"
-                className="w-12 h-12"
+                className="w-6 h-6"
               />
             </Link>
             <Link href="#" className="rounded-full bg-white p-2 hover:bg-slate-700">
             <img
                 src="/images/google.png" // Replace with the actual image URL
                 alt="Instructor"
-                className="w-12 h-12"
+                className="w-6 h-6"
               />
             </Link>
             <Link href="#" className="rounded-full bg-white p-2 hover:bg-slate-700">
             <img
                 src="/images/twitter.png" // Replace with the actual image URL
                 alt="Instructor"
-                className="w-12 h-12"
+                className="w-6 h-6"
               />
             </Link>
             <Link href="#" className="rounded-full bg-white p-2 hover:bg-slate-700">
             <img
                 src="/images/microsoft.png" // Replace with the actual image URL
                 alt="Instructor"
-                className="w-12 h-12"
+                className="w-6 h-6"
               />
             </Link>
           </div>

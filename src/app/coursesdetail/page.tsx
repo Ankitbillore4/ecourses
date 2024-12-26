@@ -46,7 +46,7 @@ export default function CourseDetails() {
           <div className="mb-8">
          
         <div className="flex gap-2 text-sm">
-          <Link href="/categories" className="text-gray-600">Home</Link>
+          <Link href="/" className="text-gray-600">Home</Link>
           <span className="text-gray-400">&gt;</span>
           <span className="text-blue-600">Categories</span>
         </div>

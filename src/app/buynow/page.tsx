@@ -160,10 +160,13 @@ export default function CheckoutForm() {
                   <span>$290.00</span>
                 </div>
               </div>
+                <Link href="/checkout">
+                
 
               <button className="w-full bg-blue-600 text-white py-2 px-4 rounded-lg">
                 Proceed to Checkout
               </button>
+                </Link>
             </div>
           </div>
         </div>
